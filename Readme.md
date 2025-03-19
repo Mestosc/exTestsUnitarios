@@ -52,7 +52,7 @@ En caso de que no haya una comprobacion en el codigo principal y hubiera que hac
     }
 }
 ```
-Bueno en caso de que no cumpla con los requerimientos lo normal seria hacer algo para que ignore el caso invalido he comprobado que si lanzas una excepcion ya te lo pone y demás y lo pasa de largo 
+Bueno en caso de que no cumpla con los requerimientos lo normal seria hacer algo para que ignore el caso invalido he comprobado que si lanzas una excepcion ya te lo pone y demás y lo pasa de largo, habria que hacer eso o algo similar para asegurar que va
 asi que podria ser eso pero francamente el que cumpla con la longitud deberia venir en el codigo
 
 ### Referencias
