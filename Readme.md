@@ -38,7 +38,8 @@ Bien en el segundo test la estructura es todavia más sencilla. El metodo falla 
 ```
 ### Conclusiones
 El codigo tiene algunos problemas ignorando el hecho de que no contempla que pongamos una letra o asi en cualquier otro lugar o que la longitud sea la necesaria, y que cuando ponemos letra al menos esta la suerte de que ya no funciona porque falla la conversion a entero
-Para arreglar el problema con las letras en caso de que usemos un array de chars lo más probable se arreglaria de la siguiente manera cambiando la posicion de la Q y de la S para hacerlo igual a como esta en la lista oficial
+
+Para arreglar el problema con el calculo de la S y la Q, habria que en caso de usar un array de chars cambiar la posicion de ambas para coincida con la lista oficial del Ministerio del Interior
 ```java
 char[] letrasDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 ```
@@ -53,3 +54,7 @@ En caso de que no haya una comprobacion en el codigo principal y hubiera que hac
 ```
 Bueno en caso de que no cumpla con los requerimientos lo normal seria hacer algo para que ignore el caso invalido he comprobado que si lanzas una excepcion ya te lo pone y demás y lo pasa de largo 
 asi que podria ser eso pero francamente el que cumpla con la longitud deberia venir en el codigo
+
+### Referencias
+- [Pagina del ministerio del interior sobre el tema del DNI](https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/) me ayudo a ver la parte del numero que corresponde a cada letra y ver el problema en el orden
+- [ChatGPT](chatgpt.com) me ayudo a crear casos para todas las letras más rapido ojo no hizo los tests solo hizo algunos casos y otras cosas las hice yo, tambien hay algunos casos de cosecha propia
