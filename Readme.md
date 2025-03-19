@@ -40,6 +40,8 @@ Bien en el segundo test la estructura es todavia más sencilla. El metodo falla 
 El codigo tiene algunos problemas ignorando el hecho de que no contempla que pongamos una letra o asi en cualquier otro lugar o que la longitud sea la necesaria, y que cuando ponemos letra al menos esta la suerte de que ya no funciona porque falla la conversion a entero
 
 Para arreglar el problema con el calculo de la S y la Q, habria que en caso de usar un array de chars cambiar la posicion de ambas para coincida con la lista oficial del Ministerio del Interior
+
+Aqui esta la lista con los cambios pertinentes de las letras S y Q
 ```java
 char[] letrasDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 ```
