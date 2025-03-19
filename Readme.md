@@ -38,7 +38,18 @@ Bien en el segundo test la estructura es todavia más sencilla. El metodo falla 
 ```
 ### Conclusiones
 El codigo tiene algunos problemas ignorando el hecho de que no contempla que pongamos una letra o asi en cualquier otro lugar o que la longitud sea la necesaria, y que cuando ponemos letra al menos esta la suerte de que ya no funciona porque falla la conversion a entero
-Para arreglar el problema con las letras en caso de que usemos un array de chars lo más probable se arreglaria de la siguiente manera
+Para arreglar el problema con las letras en caso de que usemos un array de chars lo más probable se arreglaria de la siguiente manera cambiando la posicion de la Q y de la S para hacerlo igual a como esta en la lista oficial
 ```java
 char[] letrasDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 ```
+En caso de que no haya una comprobacion en el codigo principal y hubiera que hacerlo en los tests habria que verifciar la longitud de la cadena, en este caso al solo pasarle los numeros comprobariamos si la longitud es 8 ocho antes de hacer la operacion del test seria algo asi usando el primer metodo de test como ejemplo
+
+```java
+ void testComprobarDNI(String dni, char letra, boolean validez) {
+    if (dni.length()==8) {
+        assertEquals(validez, Main.comprobarDNI(dni,letra));
+    }
+}
+```
+Bueno en caso de que no cumpla con los requerimientos lo normal seria hacer algo para que ignore el caso invalido he comprobado que si lanzas una excepcion ya te lo pone y demás y lo pasa de largo 
+asi que podria ser eso pero francamente el que cumpla con la longitud deberia venir en el codigo

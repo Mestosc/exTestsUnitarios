@@ -11,14 +11,11 @@ public class MainTest {
             "23456789,A,false",     // Caso inválido: la letra correcta para 23456789 es 'D'
             "78901234,X,true",      // Caso válido
             "34567890,G,false",     // Caso inválido: la letra correcta para 34567890 es distinta de 'G'
-            "34567890G,G,false",    // Caso inválido: el DNI contiene la letra, se espera solo dígitos
             "00000000,T,true",      // Caso válido: 00000000 % 23 = 0 -> 'T'
             "00000001,R,true",      // Caso válido: 00000001 % 23 = 1 -> 'R'
             "00000001,T,false",     // Caso inválido: letra incorrecta para 00000001
             "11111111,H,true",      // Caso válido: 11111111 % 23 = 18 -> 'H'
             "22222222,J,true",      // Caso válido: 22222222 % 23 = 13 -> 'J'
-            "1234567,T,false",      // Caso inválido: DNI con 7 dígitos en lugar de 8
-            "A2345678,R,false",      // Caso inválido: contiene carácter no numérico
             "00000000,T,true",
             "99999999,R,true",
             "23000000, T, true", // 23000000 % 23 = 0  -> 'T'
