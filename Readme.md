@@ -41,7 +41,7 @@ El codigo tiene algunos problemas ignorando el hecho de que no contempla que pon
 
 Para arreglar el problema con el calculo de la S y la Q, habria que en caso de usar un array de chars cambiar la posicion de ambas para coincida con la lista oficial del Ministerio del Interior
 
-Aqui esta la lista con los cambios pertinentes de las letras S y Q
+Aqui esta el array con los cambios pertinentes de las letras S y Q
 ```java
 char[] letrasDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 ```
